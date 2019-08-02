@@ -1,0 +1,25 @@
+INFO     tools.log_tool:log_tool.py:33 ----请求用时: 129.648 秒数
+INFO     tools.log_tool:log_tool.py:33 ---------------请求-----------------
+                                       http://qa.yansl.com:8080/admin/login
+                                       User-Agent: python-requests/2.22.0
+                                       Accept-Encoding: gzip, deflate
+                                       Accept: */*
+                                       Connection: keep-alive
+                                       Content-Length: 49
+                                       Content-Type: application/json
+                                       
+                                       b'{"password": "123456", "username": "wuchQNcBJuB"}'
+INFO     tools.log_tool:log_tool.py:33 ---------------响应----------------
+                                       200
+                                       X-Application-Context: application:prod
+                                       X-Content-Type-Options: nosniff
+                                       X-XSS-Protection: 1; mode=block
+                                       Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+                                       Pragma: no-cache
+                                       Expires: 0
+                                       X-Frame-Options: DENY
+                                       Content-Type: application/json;charset=UTF-8
+                                       Transfer-Encoding: chunked
+                                       Date: Fri, 26 Jul 2019 03:15:04 GMT
+                                       
+                                       {"code":200,"message":"操作成功","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3dWNoUU5jQkp1QiIsImNyZWF0ZWQiOjE1NjQxMTA5MDUyMTcsImV4cCI6MTU2NDcxNTcwNX0.hUDK0tzOUcIw92qz3Dz5tJQ0Vr35XY3iRrFMlEL-wrpnZT9TS2teEh3jU2cgCyORXTIwf2vziPA8HNoKzJTpVQ"}}

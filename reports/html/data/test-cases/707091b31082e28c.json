@@ -1,0 +1,120 @@
+{
+  "uid" : "707091b31082e28c",
+  "name" : "test_user_updata_role",
+  "fullName" : "user_admin.test_user_admin_process#test_user_updata_role",
+  "historyId" : "8b9f9031c6340d982da7c12f248eafdc",
+  "time" : {
+    "start" : 1564113201904,
+    "stop" : 1564113202018,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1a47e0e6938a8f1",
+      "name" : "请求",
+      "source" : "1a47e0e6938a8f1.txt",
+      "type" : "text/plain",
+      "size" : 302
+    }, {
+      "uid" : "bed0770e3379e0e6",
+      "name" : "响应",
+      "source" : "bed0770e3379e0e6.txt",
+      "type" : "text/plain",
+      "size" : 413
+    }, {
+      "uid" : "c8ddb919b770a5cc",
+      "name" : "log",
+      "source" : "c8ddb919b770a5cc.txt",
+      "type" : "text/plain",
+      "size" : 1724
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "给用户分配角色：1、商品管理员;2、商品分类管理员；3、商品类型管理员；4、品牌管理员"
+  }, {
+    "name" : "feature",
+    "value" : "后台用户管理流程"
+  }, {
+    "name" : "parentSuite",
+    "value" : "user_admin"
+  }, {
+    "name" : "suite",
+    "value" : "test_user_admin_process"
+  }, {
+    "name" : "subSuite"
+  }, {
+    "name" : "host",
+    "value" : "SKY-20190318SJZ"
+  }, {
+    "name" : "thread",
+    "value" : "6508-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "user_admin.test_user_admin_process"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7feb47fccd4f6635",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564111718518,
+        "stop" : 1564111718626,
+        "duration" : 108
+      }
+    }, {
+      "uid" : "fe0da7a8fcb7f1a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564110844531,
+        "stop" : 1564110844645,
+        "duration" : 114
+      }
+    }, {
+      "uid" : "154c0c06765a908d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564110746726,
+        "stop" : 1564110746858,
+        "duration" : 132
+      }
+    }, {
+      "uid" : "44e2e9c40ac7adf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564106110903,
+        "stop" : 1564106111023,
+        "duration" : 120
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "707091b31082e28c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,14 @@
+---------------响应----------------
+200
+X-Application-Context: application:prod
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 26 Jul 2019 03:54:22 GMT
+
+{"code":200,"message":"操作成功","data":[{"id":1,"name":"商品管理员","description":"商品管理员","adminCount":0,"createTime":1538322371000,"status":1,"sort":0},{"id":2,"name":"商品分类管理员","description":"商品分类管理员","adminCount":0,"createTime":1538322825000,"status":1,"sort":0},{"id":3,"name":"商品类型管理员","description":"商品类型管理员","adminCount":0,"createTime":1538322836000,"status":1,"sort":0},{"id":4,"name":"品牌管理员","description":"品牌管理员","adminCount":0,"createTime":1538322852000,"status":1,"sort":0}]}

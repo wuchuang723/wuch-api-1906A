@@ -1,0 +1,246 @@
+{
+  "uid" : "81114ae412541be0",
+  "name" : "test_login",
+  "fullName" : "test_case.ui.mall.test_mall_add_product#test_login",
+  "historyId" : "1e4f0ee6a197a107933520eb8c59efa0",
+  "time" : {
+    "start" : 1564627649811,
+    "stop" : 1564627696850,
+    "duration" : 47039
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "base = <tool.base_ui.BaseUI object at 0x03074610>\n\n    @allure.feature(\"添加商品分类\")\n    def test_login(base):\n        #打开登录界面 http://qa.yansl.com/#/login\n        base.get(\"打开登录界面\",'http://qa.yansl.com/#/login')\n        #输入用户名 //input[@type=\"text\"]\n        base.send_keys('输入用户名','''//input[@type=\"text\"]''','admin')\n        #输入密码 //input[@type=\"password\"]\n        base.send_keys('输入密码','''//input[@type=\"password\"]''','123456')\n        #点击登录 //span[contains(text(),'登录')]\n        base.click('点击登录','''//span[contains(text(),'登录')]''')\n        try:\n            #残忍决绝 //span[text()='残忍拒绝']\n            base.click('残忍拒绝','''//span[text()='残忍拒绝']''')\n            #再次登录 //span[contains(text(),'登录')]\n            base.click('点击登录', '''//span[contains(text(),'登录')]''')\n        except:\n            pass\n        #断言方法1\n        # f = False\n        # try:\n        #     base.local_element(\"//span[text()='首页']\")\n        #     f = True\n        # except:\n        #     pass\n        # assert_tool.assert_equal(f,True)\n        # with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(f,True)):pass\n        #断言方法2\n        # page_source = base.driver.page_source\n        # with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(page_source,'首页')):pass\n        # assert_tool.assert_in(page_source,'首页')\n        #点击下拉菜单 //div[@class=\"hamburger-container\"]/*[name()='svg']\n        #断言方法3\n        page_source = base.driver.page_source\n        with allure.step(\"登录跳转页面断言\"):\n            allure.attach(page_source,\"实际结果\",allure.attachment_type.TEXT)\n            allure.attach('首页','预期结果',allure.attachment_type.TEXT)\n    \n        base.click('点击下拉菜单','''//div[@class=\"hamburger-container\"]/*[name()='svg']''')\n        sleep(2)\n        #点击商品按钮 (//div[@class=\"el-submenu__title\"])[1]\n        base.click('点击商品按钮','''(//div[@class=\"el-submenu__title\"])[1]''')\n        sleep(2)\n        #点击添加商品 //span[text()='添加商品']\n        base.click('点击添加商品','''//span[text()='添加商品']''')\n        sleep(2)\n        #点击商品分类下拉框 //span[@class=\"el-cascader__label\"]\n>       base.click('点击商品分类下拉框','''//span[@class=\"el-cascader__label\"]''')\n\ntest_case\\ui\\mall\\test_mall_add_product.py:94: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntool\\base_ui.py:23: in function\n    res = func(*args, **kwargs)\ntool\\base_ui.py:80: in click\n    element = self.local_element(xpath)\ntool\\base_ui.py:44: in local_element\n    return WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_element_located((By.XPATH, xpath)))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"7bb1e81e01f11e73d2eea399e55b95a1\")>\nmethod = <selenium.webdriver.support.expected_conditions.presence_of_element_located object at 0x03A18A30>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "base",
+    "time" : {
+      "start" : 1564627645586,
+      "stop" : 1564627649809,
+      "duration" : 4223
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "base = <tool.base_ui.BaseUI object at 0x03074610>\n\n    @allure.feature(\"添加商品分类\")\n    def test_login(base):\n        #打开登录界面 http://qa.yansl.com/#/login\n        base.get(\"打开登录界面\",'http://qa.yansl.com/#/login')\n        #输入用户名 //input[@type=\"text\"]\n        base.send_keys('输入用户名','''//input[@type=\"text\"]''','admin')\n        #输入密码 //input[@type=\"password\"]\n        base.send_keys('输入密码','''//input[@type=\"password\"]''','123456')\n        #点击登录 //span[contains(text(),'登录')]\n        base.click('点击登录','''//span[contains(text(),'登录')]''')\n        try:\n            #残忍决绝 //span[text()='残忍拒绝']\n            base.click('残忍拒绝','''//span[text()='残忍拒绝']''')\n            #再次登录 //span[contains(text(),'登录')]\n            base.click('点击登录', '''//span[contains(text(),'登录')]''')\n        except:\n            pass\n        #断言方法1\n        # f = False\n        # try:\n        #     base.local_element(\"//span[text()='首页']\")\n        #     f = True\n        # except:\n        #     pass\n        # assert_tool.assert_equal(f,True)\n        # with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(f,True)):pass\n        #断言方法2\n        # page_source = base.driver.page_source\n        # with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(page_source,'首页')):pass\n        # assert_tool.assert_in(page_source,'首页')\n        #点击下拉菜单 //div[@class=\"hamburger-container\"]/*[name()='svg']\n        #断言方法3\n        page_source = base.driver.page_source\n        with allure.step(\"登录跳转页面断言\"):\n            allure.attach(page_source,\"实际结果\",allure.attachment_type.TEXT)\n            allure.attach('首页','预期结果',allure.attachment_type.TEXT)\n    \n        base.click('点击下拉菜单','''//div[@class=\"hamburger-container\"]/*[name()='svg']''')\n        sleep(2)\n        #点击商品按钮 (//div[@class=\"el-submenu__title\"])[1]\n        base.click('点击商品按钮','''(//div[@class=\"el-submenu__title\"])[1]''')\n        sleep(2)\n        #点击添加商品 //span[text()='添加商品']\n        base.click('点击添加商品','''//span[text()='添加商品']''')\n        sleep(2)\n        #点击商品分类下拉框 //span[@class=\"el-cascader__label\"]\n>       base.click('点击商品分类下拉框','''//span[@class=\"el-cascader__label\"]''')\n\ntest_case\\ui\\mall\\test_mall_add_product.py:94: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntool\\base_ui.py:23: in function\n    res = func(*args, **kwargs)\ntool\\base_ui.py:80: in click\n    element = self.local_element(xpath)\ntool\\base_ui.py:44: in local_element\n    return WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_element_located((By.XPATH, xpath)))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"7bb1e81e01f11e73d2eea399e55b95a1\")>\nmethod = <selenium.webdriver.support.expected_conditions.presence_of_element_located object at 0x03A18A30>\nmessage = ''\n\n    def until(self, method, message=''):\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value is not False.\"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.time() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, 'screen', None)\n                stacktrace = getattr(exc, 'stacktrace', None)\n            time.sleep(self._poll)\n            if time.time() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py:80: TimeoutException",
+    "steps" : [ {
+      "name" : "登录跳转页面断言",
+      "time" : {
+        "start" : 1564627660967,
+        "stop" : 1564627660969,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6e2feb19594b1a98",
+        "name" : "实际结果",
+        "source" : "6e2feb19594b1a98.txt",
+        "type" : "text/plain",
+        "size" : 82113
+      }, {
+        "uid" : "3f51d66cb1a1d2d0",
+        "name" : "预期结果",
+        "source" : "3f51d66cb1a1d2d0.txt",
+        "type" : "text/plain",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f674b89c0b68d647",
+      "name" : "打开登录界面之前",
+      "source" : "f674b89c0b68d647.png",
+      "type" : "image/png",
+      "size" : 6428
+    }, {
+      "uid" : "ccd737a8a62cf34d",
+      "name" : "打开登录界面之后",
+      "source" : "ccd737a8a62cf34d.png",
+      "type" : "image/png",
+      "size" : 37046
+    }, {
+      "uid" : "6fbf464058f2f38f",
+      "name" : "输入用户名之前",
+      "source" : "6fbf464058f2f38f.png",
+      "type" : "image/png",
+      "size" : 37046
+    }, {
+      "uid" : "61db2f8aa8652bbd",
+      "name" : "输入用户名之后",
+      "source" : "61db2f8aa8652bbd.png",
+      "type" : "image/png",
+      "size" : 37071
+    }, {
+      "uid" : "746b719088838122",
+      "name" : "输入密码之前",
+      "source" : "746b719088838122.png",
+      "type" : "image/png",
+      "size" : 37042
+    }, {
+      "uid" : "e214f7b49e90293c",
+      "name" : "输入密码之后",
+      "source" : "e214f7b49e90293c.png",
+      "type" : "image/png",
+      "size" : 37062
+    }, {
+      "uid" : "5aacc65a8387c10f",
+      "name" : "点击登录之前",
+      "source" : "5aacc65a8387c10f.png",
+      "type" : "image/png",
+      "size" : 37110
+    }, {
+      "uid" : "4a1d44362fe8062",
+      "name" : "点击登录之后",
+      "source" : "4a1d44362fe8062.png",
+      "type" : "image/png",
+      "size" : 50456
+    }, {
+      "uid" : "5138135e40224479",
+      "name" : "残忍拒绝之前",
+      "source" : "5138135e40224479.png",
+      "type" : "image/png",
+      "size" : 39807
+    }, {
+      "uid" : "b9ee8679814a6118",
+      "name" : "残忍拒绝之后",
+      "source" : "b9ee8679814a6118.png",
+      "type" : "image/png",
+      "size" : 44897
+    }, {
+      "uid" : "3b05809571cf84c0",
+      "name" : "点击登录之前",
+      "source" : "3b05809571cf84c0.png",
+      "type" : "image/png",
+      "size" : 37139
+    }, {
+      "uid" : "e9c59c377a6a6fb4",
+      "name" : "点击登录之后",
+      "source" : "e9c59c377a6a6fb4.png",
+      "type" : "image/png",
+      "size" : 38180
+    }, {
+      "uid" : "fb7e5faaaad4e1bc",
+      "name" : "点击下拉菜单之前",
+      "source" : "fb7e5faaaad4e1bc.png",
+      "type" : "image/png",
+      "size" : 58801
+    }, {
+      "uid" : "1936072955379774",
+      "name" : "点击下拉菜单之后",
+      "source" : "1936072955379774.png",
+      "type" : "image/png",
+      "size" : 56418
+    }, {
+      "uid" : "f6b15969656e2a5e",
+      "name" : "点击商品按钮之前",
+      "source" : "f6b15969656e2a5e.png",
+      "type" : "image/png",
+      "size" : 56418
+    }, {
+      "uid" : "f16e33352ff32f3a",
+      "name" : "点击商品按钮之后",
+      "source" : "f16e33352ff32f3a.png",
+      "type" : "image/png",
+      "size" : 71369
+    }, {
+      "uid" : "9fea47e750f5e3a",
+      "name" : "点击添加商品之前",
+      "source" : "9fea47e750f5e3a.png",
+      "type" : "image/png",
+      "size" : 56418
+    }, {
+      "uid" : "8e827972eb860da1",
+      "name" : "点击添加商品之后",
+      "source" : "8e827972eb860da1.png",
+      "type" : "image/png",
+      "size" : 56948
+    }, {
+      "uid" : "aae60ef9d2bee39b",
+      "name" : "点击商品分类下拉框之前",
+      "source" : "aae60ef9d2bee39b.png",
+      "type" : "image/png",
+      "size" : 56418
+    }, {
+      "uid" : "ee48879df6384f00",
+      "name" : "点击商品分类下拉框之后",
+      "source" : "ee48879df6384f00.png",
+      "type" : "image/png",
+      "size" : 56948
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 22,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "base::0",
+    "time" : {
+      "start" : 1564627697013,
+      "stop" : 1564627700075,
+      "duration" : 3062
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "添加商品分类"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.ui.mall"
+  }, {
+    "name" : "suite",
+    "value" : "test_mall_add_product"
+  }, {
+    "name" : "subSuite"
+  }, {
+    "name" : "host",
+    "value" : "SKY-20190318SJZ"
+  }, {
+    "name" : "thread",
+    "value" : "7812-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.ui.mall.test_mall_add_product"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81114ae412541be0.json",
+  "parameterValues" : [ ]
+}

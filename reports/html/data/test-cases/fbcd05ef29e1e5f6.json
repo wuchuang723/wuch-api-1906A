@@ -1,0 +1,374 @@
+{
+  "uid" : "fbcd05ef29e1e5f6",
+  "name" : "test_login",
+  "fullName" : "test_case.ui.mall.test_mall_add_product#test_login",
+  "historyId" : "1e4f0ee6a197a107933520eb8c59efa0",
+  "time" : {
+    "start" : 1564626485533,
+    "stop" : 1564626523559,
+    "duration" : 38026
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "base",
+    "time" : {
+      "start" : 1564626481420,
+      "stop" : 1564626485532,
+      "duration" : 4112
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登录跳转页面断言：实际结果：True,预期结果：True",
+      "time" : {
+        "start" : 1564626497712,
+        "stop" : 1564626497712,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "ee6604093bba5053",
+      "name" : "打开登录界面之前",
+      "source" : "ee6604093bba5053.png",
+      "type" : "image/png",
+      "size" : 6428
+    }, {
+      "uid" : "fb4a6ec4553354c8",
+      "name" : "打开登录界面之后",
+      "source" : "fb4a6ec4553354c8.png",
+      "type" : "image/png",
+      "size" : 37047
+    }, {
+      "uid" : "b0fbc174f029b4bc",
+      "name" : "输入用户名之前",
+      "source" : "b0fbc174f029b4bc.png",
+      "type" : "image/png",
+      "size" : 37047
+    }, {
+      "uid" : "6230cf130dac8450",
+      "name" : "输入用户名之后",
+      "source" : "6230cf130dac8450.png",
+      "type" : "image/png",
+      "size" : 37072
+    }, {
+      "uid" : "7cac42024603000",
+      "name" : "输入密码之前",
+      "source" : "7cac42024603000.png",
+      "type" : "image/png",
+      "size" : 37044
+    }, {
+      "uid" : "f8b0faca4271ba31",
+      "name" : "输入密码之后",
+      "source" : "f8b0faca4271ba31.png",
+      "type" : "image/png",
+      "size" : 37063
+    }, {
+      "uid" : "243bdc92bd4031a6",
+      "name" : "点击登录之前",
+      "source" : "243bdc92bd4031a6.png",
+      "type" : "image/png",
+      "size" : 37110
+    }, {
+      "uid" : "198e9636e73f519c",
+      "name" : "点击登录之后",
+      "source" : "198e9636e73f519c.png",
+      "type" : "image/png",
+      "size" : 50873
+    }, {
+      "uid" : "e946061d6bd797a9",
+      "name" : "残忍拒绝之前",
+      "source" : "e946061d6bd797a9.png",
+      "type" : "image/png",
+      "size" : 39807
+    }, {
+      "uid" : "fde790e2aa8e86d2",
+      "name" : "残忍拒绝之后",
+      "source" : "fde790e2aa8e86d2.png",
+      "type" : "image/png",
+      "size" : 44973
+    }, {
+      "uid" : "d3fd88e1f26ccfe4",
+      "name" : "点击登录之前",
+      "source" : "d3fd88e1f26ccfe4.png",
+      "type" : "image/png",
+      "size" : 37139
+    }, {
+      "uid" : "df5f3ee279923e51",
+      "name" : "点击登录之后",
+      "source" : "df5f3ee279923e51.png",
+      "type" : "image/png",
+      "size" : 38107
+    }, {
+      "uid" : "e00ab38c3754dc8b",
+      "name" : "点击下拉菜单之前",
+      "source" : "e00ab38c3754dc8b.png",
+      "type" : "image/png",
+      "size" : 58801
+    }, {
+      "uid" : "803a0753ec4dff59",
+      "name" : "点击下拉菜单之后",
+      "source" : "803a0753ec4dff59.png",
+      "type" : "image/png",
+      "size" : 56418
+    }, {
+      "uid" : "b4d841246e39f3e3",
+      "name" : "点击商品按钮之前",
+      "source" : "b4d841246e39f3e3.png",
+      "type" : "image/png",
+      "size" : 56418
+    }, {
+      "uid" : "95f2a0867022f031",
+      "name" : "点击商品按钮之后",
+      "source" : "95f2a0867022f031.png",
+      "type" : "image/png",
+      "size" : 71208
+    }, {
+      "uid" : "6cf3c74b1942fa2f",
+      "name" : "点击添加商品之前",
+      "source" : "6cf3c74b1942fa2f.png",
+      "type" : "image/png",
+      "size" : 64702
+    }, {
+      "uid" : "a431d3fd06f0cd7c",
+      "name" : "点击添加商品之后",
+      "source" : "a431d3fd06f0cd7c.png",
+      "type" : "image/png",
+      "size" : 76898
+    }, {
+      "uid" : "f1617c747d2ba32b",
+      "name" : "点击商品分类下拉框之前",
+      "source" : "f1617c747d2ba32b.png",
+      "type" : "image/png",
+      "size" : 44348
+    }, {
+      "uid" : "7ea9316163640a7c",
+      "name" : "点击商品分类下拉框之后",
+      "source" : "7ea9316163640a7c.png",
+      "type" : "image/png",
+      "size" : 39768
+    }, {
+      "uid" : "fcbe6350edb339bc",
+      "name" : "选择服装之前",
+      "source" : "fcbe6350edb339bc.png",
+      "type" : "image/png",
+      "size" : 39768
+    }, {
+      "uid" : "4bc457f64aa15b67",
+      "name" : "选择服装之后",
+      "source" : "4bc457f64aa15b67.png",
+      "type" : "image/png",
+      "size" : 42488
+    }, {
+      "uid" : "41bd823da39644b4",
+      "name" : "选择外套之前",
+      "source" : "41bd823da39644b4.png",
+      "type" : "image/png",
+      "size" : 42488
+    }, {
+      "uid" : "4045441eafc69767",
+      "name" : "选择外套之后",
+      "source" : "4045441eafc69767.png",
+      "type" : "image/png",
+      "size" : 37108
+    }, {
+      "uid" : "ab37bada6c0c3f5a",
+      "name" : "输入商品名称之前",
+      "source" : "ab37bada6c0c3f5a.png",
+      "type" : "image/png",
+      "size" : 36005
+    }, {
+      "uid" : "9c27e2c361f133a0",
+      "name" : "输入商品名称之后",
+      "source" : "9c27e2c361f133a0.png",
+      "type" : "image/png",
+      "size" : 37365
+    }, {
+      "uid" : "dea4903859729b99",
+      "name" : "输入副标题之前",
+      "source" : "dea4903859729b99.png",
+      "type" : "image/png",
+      "size" : 37347
+    }, {
+      "uid" : "308d98f492726490",
+      "name" : "输入副标题之后",
+      "source" : "308d98f492726490.png",
+      "type" : "image/png",
+      "size" : 37933
+    }, {
+      "uid" : "7a04594992a3e5fd",
+      "name" : "选择商品品牌之前",
+      "source" : "7a04594992a3e5fd.png",
+      "type" : "image/png",
+      "size" : 37901
+    }, {
+      "uid" : "20bd0d4c1cc4d135",
+      "name" : "选择商品品牌之后",
+      "source" : "20bd0d4c1cc4d135.png",
+      "type" : "image/png",
+      "size" : 45993
+    }, {
+      "uid" : "f912891245a8b695",
+      "name" : "选择海澜之家之前",
+      "source" : "f912891245a8b695.png",
+      "type" : "image/png",
+      "size" : 41442
+    }, {
+      "uid" : "8852abe14571d7e3",
+      "name" : "选择海澜之家之后",
+      "source" : "8852abe14571d7e3.png",
+      "type" : "image/png",
+      "size" : 38449
+    }, {
+      "uid" : "be03a7de7c6ac4b",
+      "name" : "点击“下一步，填写商品促销”之前",
+      "source" : "be03a7de7c6ac4b.png",
+      "type" : "image/png",
+      "size" : 37859
+    }, {
+      "uid" : "1d45e5cf1cdd3b3",
+      "name" : "点击“下一步，填写商品促销”之后",
+      "source" : "1d45e5cf1cdd3b3.png",
+      "type" : "image/png",
+      "size" : 41708
+    }, {
+      "uid" : "f11be368c4f51eb1",
+      "name" : "点击“下一步，填写商品属性”之前",
+      "source" : "f11be368c4f51eb1.png",
+      "type" : "image/png",
+      "size" : 41708
+    }, {
+      "uid" : "5dffe58edadae3f9",
+      "name" : "点击“下一步，填写商品属性”之后",
+      "source" : "5dffe58edadae3f9.png",
+      "type" : "image/png",
+      "size" : 39242
+    }, {
+      "uid" : "b4f17f97d2b53744",
+      "name" : "滚动窗口之前",
+      "source" : "b4f17f97d2b53744.png",
+      "type" : "image/png",
+      "size" : 39242
+    }, {
+      "uid" : "978150b9c7f91e1a",
+      "name" : "滚动窗口之后",
+      "source" : "978150b9c7f91e1a.png",
+      "type" : "image/png",
+      "size" : 27371
+    }, {
+      "uid" : "47c7c707d7664544",
+      "name" : "点击“下一步，选择商品关联”之前",
+      "source" : "47c7c707d7664544.png",
+      "type" : "image/png",
+      "size" : 27371
+    }, {
+      "uid" : "3b5fee9b28c4813e",
+      "name" : "点击“下一步，选择商品关联”之后",
+      "source" : "3b5fee9b28c4813e.png",
+      "type" : "image/png",
+      "size" : 51464
+    }, {
+      "uid" : "bce64038d08c8fde",
+      "name" : "点击“完成，提交商品”之前",
+      "source" : "bce64038d08c8fde.png",
+      "type" : "image/png",
+      "size" : 51464
+    }, {
+      "uid" : "a20e0b3dad07a1cd",
+      "name" : "点击“完成，提交商品”之后",
+      "source" : "a20e0b3dad07a1cd.png",
+      "type" : "image/png",
+      "size" : 53170
+    }, {
+      "uid" : "12185b658ab4166c",
+      "name" : "点击“确认”之前",
+      "source" : "12185b658ab4166c.png",
+      "type" : "image/png",
+      "size" : 47838
+    }, {
+      "uid" : "891952502c02e97f",
+      "name" : "点击“确认”之后",
+      "source" : "891952502c02e97f.png",
+      "type" : "image/png",
+      "size" : 7313
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 44,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "base::0",
+    "time" : {
+      "start" : 1564626523560,
+      "stop" : 1564626526712,
+      "duration" : 3152
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "添加商品分类"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.ui.mall"
+  }, {
+    "name" : "suite",
+    "value" : "test_mall_add_product"
+  }, {
+    "name" : "subSuite"
+  }, {
+    "name" : "host",
+    "value" : "SKY-20190318SJZ"
+  }, {
+    "name" : "thread",
+    "value" : "1156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.ui.mall.test_mall_add_product"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fbcd05ef29e1e5f6.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,91 @@
+[ {
+  "uid" : "b8cead045e44bf1a",
+  "name" : "test_product_category_add[添加商品分类_全字段正常流_2]",
+  "time" : {
+    "start" : 1564133292779,
+    "stop" : 1564133292908,
+    "duration" : 129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "707091b31082e28c",
+  "name" : "test_user_updata_role",
+  "time" : {
+    "start" : 1564113201904,
+    "stop" : 1564113202018,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eac850809baed36d",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1564627848521,
+    "stop" : 1564627885544,
+    "duration" : 37023
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13f1a89c7f3a9c64",
+  "name" : "test_user_acquire_role",
+  "time" : {
+    "start" : 1564113202024,
+    "stop" : 1564113202124,
+    "duration" : 100
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38f3d78109370ea6",
+  "name" : "test_user_admin_info",
+  "time" : {
+    "start" : 1564113202271,
+    "stop" : 1564113202381,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "130c46e88bf81a90",
+  "name" : "test_product_category_add[添加商品分类_全字段正常流_1]",
+  "time" : {
+    "start" : 1564133292654,
+    "stop" : 1564133292773,
+    "duration" : 119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a3beda451aabaa9",
+  "name" : "test_product_category_add[添加商品分类_全字段正常流_3]",
+  "time" : {
+    "start" : 1564133292914,
+    "stop" : 1564133293039,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af6b5217eb9d9e5f",
+  "name" : "test_user_admin_login",
+  "time" : {
+    "start" : 1564113202127,
+    "stop" : 1564113202265,
+    "duration" : 138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "275821b2f9b2ff5f",
+  "name" : "test_user_register",
+  "time" : {
+    "start" : 1564113201784,
+    "stop" : 1564113201898,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,8 @@
+---------------请求-----------------
+http://qa.yansl.com:8080/admin/role/600
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+
+None

@@ -1,0 +1,408 @@
+{
+  "uid" : "ac26a8046dc38af8",
+  "name" : "test_login",
+  "fullName" : "test_case.ui.mall.test_mall_add_product#test_login",
+  "historyId" : "1e4f0ee6a197a107933520eb8c59efa0",
+  "time" : {
+    "start" : 1564626072356,
+    "stop" : 1564626118347,
+    "duration" : 45991
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: unexpected alert open\n  (Session info: chrome=75.0.3770.142)",
+  "statusTrace" : "base = <tool.base_ui.BaseUI object at 0x03072610>\n\n    @allure.feature(\"添加商品分类\")\n    def test_login(base):\n        #打开登录界面 http://qa.yansl.com/#/login\n        base.get(\"打开登录界面\",'http://qa.yansl.com/#/login')\n        #输入用户名 //input[@type=\"text\"]\n        base.send_keys('输入用户名','''//input[@type=\"text\"]''','admin')\n        #输入密码 //input[@type=\"password\"]\n        base.send_keys('输入密码','''//input[@type=\"password\"]''','123456')\n        #点击登录 //span[contains(text(),'登录')]\n        base.click('点击登录','''//span[contains(text(),'登录')]''')\n        #残忍决绝 //span[text()='残忍拒绝']\n        base.click('残忍拒绝','''//span[text()='残忍拒绝']''')\n        #再次登录 //span[contains(text(),'登录')]\n        base.click('点击登录', '''//span[contains(text(),'登录')]''')\n        sleep(2)\n        #断言\n        f = False\n        try:\n            base.local_element(\"//span[text()='首页']\")\n            f = True\n        except:\n            pass\n        assert_tool.assert_equal(f,True)\n        with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(f,True)):pass\n        #断言，页面跳转至首页\n        # page_source = base.driver.page_source\n        # with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(page_source,'首页')):pass\n        # assert_tool.assert_in(page_source,'首页')\n        #点击下拉菜单 //div[@class=\"hamburger-container\"]/*[name()='svg']\n        base.click('点击下拉菜单','''//div[@class=\"hamburger-container\"]/*[name()='svg']''')\n        sleep(2)\n        #点击商品按钮 (//div[@class=\"el-submenu__title\"])[1]\n        base.click('点击商品按钮','''(//div[@class=\"el-submenu__title\"])[1]''')\n        sleep(2)\n        #点击添加商品 //span[text()='添加商品']\n        base.click('点击添加商品','''//span[text()='添加商品']''')\n        sleep(2)\n        #点击商品分类下拉框 //span[@class=\"el-cascader__label\"]\n        base.click('点击商品分类下拉框','''//span[@class=\"el-cascader__label\"]''')\n        #选择服装 //li[text()='服装']\n        base.click('选择服装','''//li[text()='服装']''')\n        #选择外套 //li[text()='外套']\n        base.click('选择外套','''//li[text()='外套']''')\n        #输入商品名称 //label[contains(text(),'商品名称')]/..//input\n        base.send_keys('输入商品名称','''//label[contains(text(),'商品名称')]/..//input''','不能说的秘密')\n        # 输入副标题 //label[contains(text(),'副标题')]/..//input\n        base.send_keys('输入副标题', '''//label[contains(text(),'副标题')]/..//input''', '青春帅气')\n        #选择商品品牌 //input[@placeholder=\"请选择品牌\"]\n        base.click('选择商品品牌','''//input[@placeholder=\"请选择品牌\"]''')\n        #选择海澜之家 //span[text()='海澜之家']\n        base.click('选择海澜之家','''//span[text()='海澜之家']''')\n        #点击“下一步，填写商品促销” //span[text()='下一步，填写商品促销']\n        base.click('点击“下一步，填写商品促销”','''//span[text()='下一步，填写商品促销']''')\n    \n        # 点击“下一步，填写商品属性” //span[text()='下一步，填写商品属性']\n        base.click('点击“下一步，填写商品属性”', '''//span[text()='下一步，填写商品属性']''')\n    \n        #滚动窗口\n        base.scroll_screen(\"滚动窗口\")\n        #窗口切换至iframe\n        base.switch_to_frame('窗口切换至iframe','''(//iframe)[1]''')\n        #输入电脑端详情\n        base.send_keys('输入电脑端详情','''//body''','清仓大甩卖')\n        #切出iframe\n        base.switch_to_content('切出iframe')\n    \n        # 点击“下一步，选择商品关联” //span[text()='下一步，选择商品关联']\n        base.click('点击“下一步，选择商品关联”', '''//span[text()='下一步，选择商品关联']''')\n    \n        # 点击“完成，提交商品” //span[text()='完成，提交商品']\n        base.click('点击“完成，提交商品”', '''//span[text()='完成，提交商品']''')\n    \n        # 点击“确认” (//button/span)[last()]\n>       base.click('点击“确认”', '''(//button/span)[last()]''')\n\ntest_case\\ui\\mall\\test_mall_add_product.py:121: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntool\\base_ui.py:30: in function\n    allure.attach(args[0].driver.get_screenshot_as_png(), args[1] + '之后', allure.attachment_type.PNG)\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1064: in get_screenshot_as_png\n    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1074: in get_screenshot_as_base64\n    return self.execute(Command.SCREENSHOT)['value']\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x03A2A9F0>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"unexpected alert open\",\"message\":\"unexpected alert open\\\\n  (Session info...x7654336A+18]\\\\n\\\\tRtlInitializeExceptionChain [0x773A9902+99]\\\\n\\\\tRtlInitializeExceptionChain [0x773A98D5+54]\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n>           raise exception_class(message, screen, stacktrace, alert_text)\nE           selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nE           Message: unexpected alert open\nE             (Session info: chrome=75.0.3770.142)\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:241: UnexpectedAlertPresentException",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "base",
+    "time" : {
+      "start" : 1564626068349,
+      "stop" : 1564626072354,
+      "duration" : 4005
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nMessage: unexpected alert open\n  (Session info: chrome=75.0.3770.142)",
+    "statusTrace" : "base = <tool.base_ui.BaseUI object at 0x03072610>\n\n    @allure.feature(\"添加商品分类\")\n    def test_login(base):\n        #打开登录界面 http://qa.yansl.com/#/login\n        base.get(\"打开登录界面\",'http://qa.yansl.com/#/login')\n        #输入用户名 //input[@type=\"text\"]\n        base.send_keys('输入用户名','''//input[@type=\"text\"]''','admin')\n        #输入密码 //input[@type=\"password\"]\n        base.send_keys('输入密码','''//input[@type=\"password\"]''','123456')\n        #点击登录 //span[contains(text(),'登录')]\n        base.click('点击登录','''//span[contains(text(),'登录')]''')\n        #残忍决绝 //span[text()='残忍拒绝']\n        base.click('残忍拒绝','''//span[text()='残忍拒绝']''')\n        #再次登录 //span[contains(text(),'登录')]\n        base.click('点击登录', '''//span[contains(text(),'登录')]''')\n        sleep(2)\n        #断言\n        f = False\n        try:\n            base.local_element(\"//span[text()='首页']\")\n            f = True\n        except:\n            pass\n        assert_tool.assert_equal(f,True)\n        with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(f,True)):pass\n        #断言，页面跳转至首页\n        # page_source = base.driver.page_source\n        # with allure.step(\"登录跳转页面断言：实际结果：{},预期结果：{}\".format(page_source,'首页')):pass\n        # assert_tool.assert_in(page_source,'首页')\n        #点击下拉菜单 //div[@class=\"hamburger-container\"]/*[name()='svg']\n        base.click('点击下拉菜单','''//div[@class=\"hamburger-container\"]/*[name()='svg']''')\n        sleep(2)\n        #点击商品按钮 (//div[@class=\"el-submenu__title\"])[1]\n        base.click('点击商品按钮','''(//div[@class=\"el-submenu__title\"])[1]''')\n        sleep(2)\n        #点击添加商品 //span[text()='添加商品']\n        base.click('点击添加商品','''//span[text()='添加商品']''')\n        sleep(2)\n        #点击商品分类下拉框 //span[@class=\"el-cascader__label\"]\n        base.click('点击商品分类下拉框','''//span[@class=\"el-cascader__label\"]''')\n        #选择服装 //li[text()='服装']\n        base.click('选择服装','''//li[text()='服装']''')\n        #选择外套 //li[text()='外套']\n        base.click('选择外套','''//li[text()='外套']''')\n        #输入商品名称 //label[contains(text(),'商品名称')]/..//input\n        base.send_keys('输入商品名称','''//label[contains(text(),'商品名称')]/..//input''','不能说的秘密')\n        # 输入副标题 //label[contains(text(),'副标题')]/..//input\n        base.send_keys('输入副标题', '''//label[contains(text(),'副标题')]/..//input''', '青春帅气')\n        #选择商品品牌 //input[@placeholder=\"请选择品牌\"]\n        base.click('选择商品品牌','''//input[@placeholder=\"请选择品牌\"]''')\n        #选择海澜之家 //span[text()='海澜之家']\n        base.click('选择海澜之家','''//span[text()='海澜之家']''')\n        #点击“下一步，填写商品促销” //span[text()='下一步，填写商品促销']\n        base.click('点击“下一步，填写商品促销”','''//span[text()='下一步，填写商品促销']''')\n    \n        # 点击“下一步，填写商品属性” //span[text()='下一步，填写商品属性']\n        base.click('点击“下一步，填写商品属性”', '''//span[text()='下一步，填写商品属性']''')\n    \n        #滚动窗口\n        base.scroll_screen(\"滚动窗口\")\n        #窗口切换至iframe\n        base.switch_to_frame('窗口切换至iframe','''(//iframe)[1]''')\n        #输入电脑端详情\n        base.send_keys('输入电脑端详情','''//body''','清仓大甩卖')\n        #切出iframe\n        base.switch_to_content('切出iframe')\n    \n        # 点击“下一步，选择商品关联” //span[text()='下一步，选择商品关联']\n        base.click('点击“下一步，选择商品关联”', '''//span[text()='下一步，选择商品关联']''')\n    \n        # 点击“完成，提交商品” //span[text()='完成，提交商品']\n        base.click('点击“完成，提交商品”', '''//span[text()='完成，提交商品']''')\n    \n        # 点击“确认” (//button/span)[last()]\n>       base.click('点击“确认”', '''(//button/span)[last()]''')\n\ntest_case\\ui\\mall\\test_mall_add_product.py:121: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntool\\base_ui.py:30: in function\n    allure.attach(args[0].driver.get_screenshot_as_png(), args[1] + '之后', allure.attachment_type.PNG)\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1064: in get_screenshot_as_png\n    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:1074: in get_screenshot_as_base64\n    return self.execute(Command.SCREENSHOT)['value']\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x03A2A9F0>\nresponse = {'status': 500, 'value': '{\"value\":{\"error\":\"unexpected alert open\",\"message\":\"unexpected alert open\\\\n  (Session info...x7654336A+18]\\\\n\\\\tRtlInitializeExceptionChain [0x773A9902+99]\\\\n\\\\tRtlInitializeExceptionChain [0x773A98D5+54]\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n>           raise exception_class(message, screen, stacktrace, alert_text)\nE           selenium.common.exceptions.UnexpectedAlertPresentException: Alert Text: None\nE           Message: unexpected alert open\nE             (Session info: chrome=75.0.3770.142)\n\nvenv\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:241: UnexpectedAlertPresentException",
+    "steps" : [ {
+      "name" : "登录跳转页面断言：实际结果：True,预期结果：True",
+      "time" : {
+        "start" : 1564626083511,
+        "stop" : 1564626083511,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "3512da1ce387eaa6",
+      "name" : "打开登录界面之前",
+      "source" : "3512da1ce387eaa6.png",
+      "type" : "image/png",
+      "size" : 6428
+    }, {
+      "uid" : "57f9e9275db0aa64",
+      "name" : "打开登录界面之后",
+      "source" : "57f9e9275db0aa64.png",
+      "type" : "image/png",
+      "size" : 37046
+    }, {
+      "uid" : "70daf025c253673c",
+      "name" : "输入用户名之前",
+      "source" : "70daf025c253673c.png",
+      "type" : "image/png",
+      "size" : 37046
+    }, {
+      "uid" : "5b323cde421d46d6",
+      "name" : "输入用户名之后",
+      "source" : "5b323cde421d46d6.png",
+      "type" : "image/png",
+      "size" : 37071
+    }, {
+      "uid" : "a53f496987baf4ea",
+      "name" : "输入密码之前",
+      "source" : "a53f496987baf4ea.png",
+      "type" : "image/png",
+      "size" : 37042
+    }, {
+      "uid" : "f480d6ae69564ea1",
+      "name" : "输入密码之后",
+      "source" : "f480d6ae69564ea1.png",
+      "type" : "image/png",
+      "size" : 37062
+    }, {
+      "uid" : "23b4d7c07ae5d98b",
+      "name" : "点击登录之前",
+      "source" : "23b4d7c07ae5d98b.png",
+      "type" : "image/png",
+      "size" : 37110
+    }, {
+      "uid" : "7f9a714933d304e6",
+      "name" : "点击登录之后",
+      "source" : "7f9a714933d304e6.png",
+      "type" : "image/png",
+      "size" : 49964
+    }, {
+      "uid" : "45dba431c00ab54e",
+      "name" : "残忍拒绝之前",
+      "source" : "45dba431c00ab54e.png",
+      "type" : "image/png",
+      "size" : 39807
+    }, {
+      "uid" : "53c48451a01b2890",
+      "name" : "残忍拒绝之后",
+      "source" : "53c48451a01b2890.png",
+      "type" : "image/png",
+      "size" : 46694
+    }, {
+      "uid" : "7651ee39ca71bdb4",
+      "name" : "点击登录之前",
+      "source" : "7651ee39ca71bdb4.png",
+      "type" : "image/png",
+      "size" : 37139
+    }, {
+      "uid" : "fb25c268380cee93",
+      "name" : "点击登录之后",
+      "source" : "fb25c268380cee93.png",
+      "type" : "image/png",
+      "size" : 38136
+    }, {
+      "uid" : "32f128aa3c37273a",
+      "name" : "点击下拉菜单之前",
+      "source" : "32f128aa3c37273a.png",
+      "type" : "image/png",
+      "size" : 58801
+    }, {
+      "uid" : "1270de8a652a8ca9",
+      "name" : "点击下拉菜单之后",
+      "source" : "1270de8a652a8ca9.png",
+      "type" : "image/png",
+      "size" : 61444
+    }, {
+      "uid" : "b931eeb45be599f7",
+      "name" : "点击商品按钮之前",
+      "source" : "b931eeb45be599f7.png",
+      "type" : "image/png",
+      "size" : 56418
+    }, {
+      "uid" : "67a45199d6c39deb",
+      "name" : "点击商品按钮之后",
+      "source" : "67a45199d6c39deb.png",
+      "type" : "image/png",
+      "size" : 71249
+    }, {
+      "uid" : "517c36dbcfe04834",
+      "name" : "点击添加商品之前",
+      "source" : "517c36dbcfe04834.png",
+      "type" : "image/png",
+      "size" : 64702
+    }, {
+      "uid" : "505e3782d0877306",
+      "name" : "点击添加商品之后",
+      "source" : "505e3782d0877306.png",
+      "type" : "image/png",
+      "size" : 73601
+    }, {
+      "uid" : "2ad73c1699ff858c",
+      "name" : "点击商品分类下拉框之前",
+      "source" : "2ad73c1699ff858c.png",
+      "type" : "image/png",
+      "size" : 44348
+    }, {
+      "uid" : "9a0627ec0f96aa17",
+      "name" : "点击商品分类下拉框之后",
+      "source" : "9a0627ec0f96aa17.png",
+      "type" : "image/png",
+      "size" : 45455
+    }, {
+      "uid" : "3e664de6a621dfc7",
+      "name" : "选择服装之前",
+      "source" : "3e664de6a621dfc7.png",
+      "type" : "image/png",
+      "size" : 39792
+    }, {
+      "uid" : "c40351cb2e14fab5",
+      "name" : "选择服装之后",
+      "source" : "c40351cb2e14fab5.png",
+      "type" : "image/png",
+      "size" : 42505
+    }, {
+      "uid" : "5dbd35ac91d74749",
+      "name" : "选择外套之前",
+      "source" : "5dbd35ac91d74749.png",
+      "type" : "image/png",
+      "size" : 42505
+    }, {
+      "uid" : "50344360ca9bb5bd",
+      "name" : "选择外套之后",
+      "source" : "50344360ca9bb5bd.png",
+      "type" : "image/png",
+      "size" : 37089
+    }, {
+      "uid" : "936bc3348c4d21be",
+      "name" : "输入商品名称之前",
+      "source" : "936bc3348c4d21be.png",
+      "type" : "image/png",
+      "size" : 36005
+    }, {
+      "uid" : "e76a5954af0a4995",
+      "name" : "输入商品名称之后",
+      "source" : "e76a5954af0a4995.png",
+      "type" : "image/png",
+      "size" : 37365
+    }, {
+      "uid" : "a433f20360bbbb00",
+      "name" : "输入副标题之前",
+      "source" : "a433f20360bbbb00.png",
+      "type" : "image/png",
+      "size" : 37347
+    }, {
+      "uid" : "81150c357fa75aa6",
+      "name" : "输入副标题之后",
+      "source" : "81150c357fa75aa6.png",
+      "type" : "image/png",
+      "size" : 37933
+    }, {
+      "uid" : "34b2d1d690719bca",
+      "name" : "选择商品品牌之前",
+      "source" : "34b2d1d690719bca.png",
+      "type" : "image/png",
+      "size" : 37901
+    }, {
+      "uid" : "52de5a7781b3aa8f",
+      "name" : "选择商品品牌之后",
+      "source" : "52de5a7781b3aa8f.png",
+      "type" : "image/png",
+      "size" : 45978
+    }, {
+      "uid" : "1c23cf14d28b4ba2",
+      "name" : "选择海澜之家之前",
+      "source" : "1c23cf14d28b4ba2.png",
+      "type" : "image/png",
+      "size" : 41416
+    }, {
+      "uid" : "ea72fd53ef0986a4",
+      "name" : "选择海澜之家之后",
+      "source" : "ea72fd53ef0986a4.png",
+      "type" : "image/png",
+      "size" : 38449
+    }, {
+      "uid" : "733de5970240ef29",
+      "name" : "点击“下一步，填写商品促销”之前",
+      "source" : "733de5970240ef29.png",
+      "type" : "image/png",
+      "size" : 37837
+    }, {
+      "uid" : "1aa975bf5fc903a0",
+      "name" : "点击“下一步，填写商品促销”之后",
+      "source" : "1aa975bf5fc903a0.png",
+      "type" : "image/png",
+      "size" : 41708
+    }, {
+      "uid" : "208578c57cbef1cd",
+      "name" : "点击“下一步，填写商品属性”之前",
+      "source" : "208578c57cbef1cd.png",
+      "type" : "image/png",
+      "size" : 41708
+    }, {
+      "uid" : "ea13994882adf911",
+      "name" : "点击“下一步，填写商品属性”之后",
+      "source" : "ea13994882adf911.png",
+      "type" : "image/png",
+      "size" : 39242
+    }, {
+      "uid" : "a92482c30994e96a",
+      "name" : "滚动窗口之前",
+      "source" : "a92482c30994e96a.png",
+      "type" : "image/png",
+      "size" : 39242
+    }, {
+      "uid" : "24863a75974df111",
+      "name" : "滚动窗口之后",
+      "source" : "24863a75974df111.png",
+      "type" : "image/png",
+      "size" : 27371
+    }, {
+      "uid" : "8d9f34cd22eb2d2e",
+      "name" : "窗口切换至iframe之前",
+      "source" : "8d9f34cd22eb2d2e.png",
+      "type" : "image/png",
+      "size" : 27371
+    }, {
+      "uid" : "59f60db5e1467c61",
+      "name" : "窗口切换至iframe之后",
+      "source" : "59f60db5e1467c61.png",
+      "type" : "image/png",
+      "size" : 27371
+    }, {
+      "uid" : "3591878dbc818ed3",
+      "name" : "输入电脑端详情之前",
+      "source" : "3591878dbc818ed3.png",
+      "type" : "image/png",
+      "size" : 27371
+    }, {
+      "uid" : "7d1d1ca05daaea4",
+      "name" : "输入电脑端详情之后",
+      "source" : "7d1d1ca05daaea4.png",
+      "type" : "image/png",
+      "size" : 28638
+    }, {
+      "uid" : "e4979f546593df45",
+      "name" : "切出iframe之前",
+      "source" : "e4979f546593df45.png",
+      "type" : "image/png",
+      "size" : 28620
+    }, {
+      "uid" : "be91bc940b3820a8",
+      "name" : "切出iframe之后",
+      "source" : "be91bc940b3820a8.png",
+      "type" : "image/png",
+      "size" : 28620
+    }, {
+      "uid" : "229828f1f34a6b6d",
+      "name" : "点击“下一步，选择商品关联”之前",
+      "source" : "229828f1f34a6b6d.png",
+      "type" : "image/png",
+      "size" : 28641
+    }, {
+      "uid" : "f141bc0353b6e7d7",
+      "name" : "点击“下一步，选择商品关联”之后",
+      "source" : "f141bc0353b6e7d7.png",
+      "type" : "image/png",
+      "size" : 51464
+    }, {
+      "uid" : "7dc6549516a09aa5",
+      "name" : "点击“完成，提交商品”之前",
+      "source" : "7dc6549516a09aa5.png",
+      "type" : "image/png",
+      "size" : 51464
+    }, {
+      "uid" : "a342433cc6578f1a",
+      "name" : "点击“完成，提交商品”之后",
+      "source" : "a342433cc6578f1a.png",
+      "type" : "image/png",
+      "size" : 53146
+    }, {
+      "uid" : "7ae4ac6c883437bf",
+      "name" : "点击“确认”之前",
+      "source" : "7ae4ac6c883437bf.png",
+      "type" : "image/png",
+      "size" : 47838
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 49,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "base::0",
+    "time" : {
+      "start" : 1564626118617,
+      "stop" : 1564626121439,
+      "duration" : 2822
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "添加商品分类"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.ui.mall"
+  }, {
+    "name" : "suite",
+    "value" : "test_mall_add_product"
+  }, {
+    "name" : "subSuite"
+  }, {
+    "name" : "host",
+    "value" : "SKY-20190318SJZ"
+  }, {
+    "name" : "thread",
+    "value" : "5064-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.ui.mall.test_mall_add_product"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ac26a8046dc38af8.json",
+  "parameterValues" : [ ]
+}

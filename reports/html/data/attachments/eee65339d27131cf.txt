@@ -1,0 +1,12 @@
+---------------请求-----------------
+http://qa.yansl.com:8080/productCategory/create
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZWQiOjE1NjQxMzI1OTA1MzUsImV4cCI6MTU2NDczNzM5MH0.6LA_sS8ghtf9ATvQiEC4-Yq0apR786Ai7F9IJD9D8NF81fSopFNeqeZimnlLvUxHvSC1pJaO4ZnpBP0AQ4oyzw
+charset: UTF-8
+Content-Length: 251
+Content-Type: application/json
+
+b'{"description": "a", "icon": "http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&fm=26&gp=0.jpg", "keywords": "s", "name": "\\u8f66", "navStatus": 0, "parentId": 0, "productAttributeIdList": [1], "productUnit": "\\u4ef6", "showStatus": 0, "sort": 0}'

@@ -1,0 +1,129 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "user_admin.test_user_admin_process",
+    "children" : [ {
+      "name" : "test_user_register",
+      "uid" : "275821b2f9b2ff5f",
+      "parentUid" : "6d7151a0389c4bdc4c02eba18f1076d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564113201784,
+        "stop" : 1564113201898,
+        "duration" : 114
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_user_updata_role",
+      "uid" : "707091b31082e28c",
+      "parentUid" : "6d7151a0389c4bdc4c02eba18f1076d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564113201904,
+        "stop" : 1564113202018,
+        "duration" : 114
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_user_acquire_role",
+      "uid" : "13f1a89c7f3a9c64",
+      "parentUid" : "6d7151a0389c4bdc4c02eba18f1076d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564113202024,
+        "stop" : 1564113202124,
+        "duration" : 100
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_user_admin_login",
+      "uid" : "af6b5217eb9d9e5f",
+      "parentUid" : "6d7151a0389c4bdc4c02eba18f1076d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564113202127,
+        "stop" : 1564113202265,
+        "duration" : 138
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_user_admin_info",
+      "uid" : "38f3d78109370ea6",
+      "parentUid" : "6d7151a0389c4bdc4c02eba18f1076d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1564113202271,
+        "stop" : 1564113202381,
+        "duration" : 110
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "user_admin.test_user_admin_process"
+  }, {
+    "name" : "test_case",
+    "children" : [ {
+      "name" : "product_category.test_product_category_add",
+      "children" : [ {
+        "name" : "test_product_category_add[添加商品分类_全字段正常流_1]",
+        "uid" : "130c46e88bf81a90",
+        "parentUid" : "f9f4281bc5bcb3054858fde26338d284",
+        "status" : "passed",
+        "time" : {
+          "start" : 1564133292654,
+          "stop" : 1564133292773,
+          "duration" : 119
+        },
+        "flaky" : false,
+        "parameters" : [ "200.0", "'{\n  \"description\": \"a\",\n  \"icon\": \"http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&fm=26&gp=0.jpg\",\n  \"keywords\": \"s\",\n  \"name\": \"车\",\n  \"navStatus\": 0,\n  \"parentId\": 0,\n  \"productAttributeIdList\": [\n    1\n  ],\n  \"productUnit\": \"件\",\n  \"showStatus\": 0,\n  \"sort\": 0\n}'", "'/productCategory/create'" ]
+      }, {
+        "name" : "test_product_category_add[添加商品分类_全字段正常流_2]",
+        "uid" : "b8cead045e44bf1a",
+        "parentUid" : "f9f4281bc5bcb3054858fde26338d284",
+        "status" : "passed",
+        "time" : {
+          "start" : 1564133292779,
+          "stop" : 1564133292908,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "parameters" : [ "200.0", "'{\n  \"description\": \"fghfhfhfghfhfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg\",\n  \"icon\": \"http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&fm=26&gp=0.jpg\",\n  \"keywords\": \"s\",\n  \"name\": \"车\",\n  \"navStatus\": 0,\n  \"parentId\": 0,\n  \"productAttributeIdList\": [\n    1\n  ],\n  \"productUnit\": \"件\",\n  \"showStatus\": 0,\n  \"sort\": 0\n}'", "'/productCategory/create'" ]
+      }, {
+        "name" : "test_product_category_add[添加商品分类_全字段正常流_3]",
+        "uid" : "8a3beda451aabaa9",
+        "parentUid" : "f9f4281bc5bcb3054858fde26338d284",
+        "status" : "passed",
+        "time" : {
+          "start" : 1564133292914,
+          "stop" : 1564133293039,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "parameters" : [ "200.0", "'{\n  \"description\": \"fghfhfhfghfhfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg\",\n  \"icon\": \"http://img5.imgtn.bdimg.com/it/u=3300305952,1328708913&fm=26&gp=0.jpg\",\n  \"keywords\": \"s\",\n  \"name\": \"车\",\n  \"navStatus\": 0,\n  \"parentId\": 0,\n  \"productAttributeIdList\": [\n    1\n  ],\n  \"productUnit\": \"件\",\n  \"showStatus\": 0,\n  \"sort\": 0\n}'", "'/productCategory/create'" ]
+      } ],
+      "uid" : "product_category.test_product_category_add"
+    }, {
+      "name" : "ui.mall.test_mall_add_product",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "eac850809baed36d",
+        "parentUid" : "60a1104da6ea6f04aa6b8c73e5d302e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1564627848521,
+          "stop" : 1564627885544,
+          "duration" : 37023
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ui.mall.test_mall_add_product"
+    } ],
+    "uid" : "3b2e467b921b0ea8d4803b9c79d92d0c"
+  } ]
+}

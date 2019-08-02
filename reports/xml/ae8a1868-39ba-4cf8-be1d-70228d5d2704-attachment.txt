@@ -1,0 +1,10 @@
+---------------请求-----------------
+http://qa.yansl.com:8080/admin/login
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 43
+Content-Type: application/json
+
+b'{"password": "123456", "username": "admin"}'

@@ -1,0 +1,26 @@
+{
+  "total" : 5,
+  "items" : [ {
+    "uid" : "70ef9c68d60967fd5949ef5ef163480b",
+    "name" : "后台用户管理流程",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "12242f058c46543343b7b0dd8963661b",
+    "name" : "添加商品分类",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

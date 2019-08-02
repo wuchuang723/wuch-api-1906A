@@ -1,0 +1,10 @@
+---------------请求-----------------
+http://qa.yansl.com:8080/admin/role/update
+User-Agent: python-requests/2.22.0
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: keep-alive
+Content-Length: 51
+Content-Type: application/x-www-form-urlencoded
+
+adminId=786&roleIds=1&roleIds=2&roleIds=3&roleIds=4

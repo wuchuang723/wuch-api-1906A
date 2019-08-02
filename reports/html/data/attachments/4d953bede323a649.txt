@@ -1,0 +1,25 @@
+INFO     tools.log_tool:log_tool.py:33 ----请求用时: 97.246 秒数
+INFO     tools.log_tool:log_tool.py:33 ---------------请求-----------------
+                                       http://qa.yansl.com:8080/admin/info
+                                       User-Agent: python-requests/2.22.0
+                                       Accept-Encoding: gzip, deflate
+                                       Accept: */*
+                                       Connection: keep-alive
+                                       Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3dWNoZ2lubVR4YiIsImNyZWF0ZWQiOjE1NjQxMDYxNzE2NzMsImV4cCI6MTU2NDcxMDk3MX0.fNNVcV2-IgGBQDULKl6cidHTnA56XS8JvZjTz3VIO9vW0iH8uHcEs1Sro5tXfIzFz4erGu49aTeKAw-KFE3UKQ
+                                       charset: UTF-8
+                                       
+                                       None
+INFO     tools.log_tool:log_tool.py:33 ---------------响应----------------
+                                       200
+                                       X-Application-Context: application:prod
+                                       X-Content-Type-Options: nosniff
+                                       X-XSS-Protection: 1; mode=block
+                                       Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+                                       Pragma: no-cache
+                                       Expires: 0
+                                       X-Frame-Options: DENY
+                                       Content-Type: application/json;charset=UTF-8
+                                       Transfer-Encoding: chunked
+                                       Date: Fri, 26 Jul 2019 01:56:11 GMT
+                                       
+                                       {"code":200,"message":"操作成功","data":{"roles":["TEST"],"icon":null,"username":"wuchginmTxb"}}
